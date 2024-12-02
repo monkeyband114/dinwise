@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Dashboard - SIWES Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="instructor-dashboard">
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>SIWES Management</h2>
+            <nav>
+                <ul>
+                    <li><a href="#task-assignment">Assign Tasks</a></li>
+                    <li><a href="#tasks">View Tasks</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/50" alt="User Avatar">
+                <span id="user-name">Instructor Name</span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+            <div id="task-assignment" class="card">
+                <h2>Assign Task</h2>
+                <form id="task-form">
+                    <input type="number" id="student-id" placeholder="Student ID" required>
+                    <textarea id="task-description" placeholder="Task description" required></textarea>
+                    <button type="submit">Assign Task</button>
+                </form>
+            </div>
+            <div id="tasks" class="card">
+                <h2>Assigned Tasks</h2>
+                <div id="task-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

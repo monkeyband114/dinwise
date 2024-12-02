@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Michael Adawaren",
+      "email": "adawaren@gmail.com",
+      "password": "$2a$10$JIYODQ8Jxil8Jl2ZSomZR.yvgp/3T5/KrVKI78rnkSYEpBC5ZBfEy",
+      "role": "student"
+    },
+    {
+      "id": 2,
+      "name": "emuagevoke",
+      "email": "voke@gmail.com",
+      "password": "$2a$10$DsHC22CMpbZPHJUI/uLXyekuazMqZN.gLps8TiAUyYtBu2hy.3A.O",
+      "role": "instructor"
+    },
+    {
+      "id": 3,
+      "name": "danny bitch",
+      "email": "awanibitch@gmail",
+      "password": "$2a$10$nQmg7V.ZRQ1dG/5bOat2gOP7jZctznrl9h3f.E/aaHoMYqdSpbQNi",
+      "role": "student"
+    },
+    {
+      "id": 4,
+      "name": "Agbra Dickson",
+      "email": "dickson@gmail.com",
+      "password": "$2a$10$.Bi6DyogNcDufjJToOK4A.3JA20qxJD16Q9gtgHwAPZ/fwHYqX.cy",
+      "role": "instructor"
+    }
+  ],
+  "logbooks": [
+    {
+      "userId": 1,
+      "entries": [
+        {
+          "date": "2024-11-14",
+          "entry": "i assisted in programing my light bulb "
+        },
+        {
+          "date": "2024-12-02",
+          "entry": "assisted in wiring A Solanoid lock "
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "entries": [
+        {
+          "date": "2024-12-02",
+          "entry": "get a breakdown of remote entries"
+        },
+        {
+          "date": "2024-12-02",
+          "entry": "got rejisters for supervisor "
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "instructorId": 2,
+      "studentId": "1",
+      "description": "get me coffee",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "instructorId": 2,
+      "studentId": "3",
+      "description": "come too the parlor\n",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "instructorId": 2,
+      "studentId": "3",
+      "description": "go to the palor",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "instructorId": 2,
+      "studentId": "1",
+      "description": "wire the sensor ",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "instructorId": 4,
+      "studentId": "3",
+      "description": "bring my register",
+      "status": "pending"
+    }
+  ]
+}

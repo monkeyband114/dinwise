@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - SIWES Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="student-dashboard">
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>SIWES Management</h2>
+            <nav>
+                <ul>
+                    <li><a href="#logbook">Logbook</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/50" alt="User Avatar">
+                <span id="user-name">Student Name</span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+            <div id="logbook" class="card">
+                <h2>Electronic Logbook</h2>
+                <form id="logbook-form">
+                    <input type="date" id="logbook-date" required>
+                    <textarea id="logbook-entry" placeholder="Enter your logbook entry" required></textarea>
+                    <button type="submit">Add Entry</button>
+                </form>
+                <div id="logbook-entries"></div>
+            </div>
+            <div id="tasks" class="card">
+                <h2>Assigned Tasks</h2>
+                <div id="task-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
